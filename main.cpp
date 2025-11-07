@@ -6,7 +6,6 @@
 #include "tensorflow/lite/micro/micro_mutable_op_resolver.h"
 
 int main() {
-    //RegisterDebugLogCallback(debug_log_printf);
     MicroPrintf("started");
 
     tflite::InitializeTarget();
@@ -60,7 +59,5 @@ int main() {
     }
 
     MicroPrintf("all correct");
-    MicroPrintf("");
-
-    return kTfLiteOk;
+    return 0;
 }
