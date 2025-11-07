@@ -5,7 +5,6 @@ add_executable(tflm main.cpp)
 
 target_compile_options(tflm PRIVATE
     -Wall
-    -Wextra
 )
 
 target_compile_definitions(tflm PRIVATE
