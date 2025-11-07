@@ -16,5 +16,5 @@ target_compile_definitions(tflm PRIVATE
 )
 
 target_link_libraries(tflm PRIVATE
-    ${PROJECT_SOURCE_DIR}/tflite-micro/gen/linux_x86_64_default/lib/libtensorflow-microlite.a
+    ${PROJECT_SOURCE_DIR}/gen/linux_x86_64_default_gcc/lib/libtensorflow-microlite.a
 )
