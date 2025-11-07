@@ -6,7 +6,7 @@ uv venv venv
 . venv/bin/activate
 uv pip install numpy Pillow
 
-TENSORFLOW_ROOT=tflite-micro/
+export TENSORFLOW_ROOT=tflite-micro/
 make -f ${TENSORFLOW_ROOT}tensorflow/lite/micro/tools/make/Makefile clean TENSORFLOW_ROOT=${TENSORFLOW_ROOT}
 make -f ${TENSORFLOW_ROOT}tensorflow/lite/micro/tools/make/Makefile third_party_downloads TENSORFLOW_ROOT=${TENSORFLOW_ROOT}
 make -f ${TENSORFLOW_ROOT}tensorflow/lite/micro/tools/make/Makefile clean TENSORFLOW_ROOT=${TENSORFLOW_ROOT}
